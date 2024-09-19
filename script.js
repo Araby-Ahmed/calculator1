@@ -88,7 +88,6 @@ math.forEach(
         result.textContent = `${input.value} ${state}`;
         input.style.display = "none";
         input2.style.display = "block";
-        input2.focus();
       }
     })
 );
