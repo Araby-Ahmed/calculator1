@@ -58,6 +58,8 @@ input2::-webkit-inner-spin-button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   gap: 15px;
+  width: 70%;
+  margin: 0 auto;
 }
 .content span {
   font-size: 30px;

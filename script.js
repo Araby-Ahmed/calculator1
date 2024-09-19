@@ -98,60 +98,63 @@ math.forEach(
 /// mathinnng
 
 igual.onclick = function () {
-  if (state === más.textContent) {
-    result.textContent = `${input.value} ${state} ${input2.value} = ${
-      +input.value + +input2.value
-    }`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
+  if (result.textContent !== "Result") {
+    if (state === más.textContent) {
+      result.textContent = `${input.value} ${state} ${input2.value} = ${
+        +input.value + +input2.value
+      }`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    } else if (state === menos.textContent) {
+      result.textContent = `${input.value} ${state} ${input2.value} = ${
+        +input.value - +input2.value
+      }`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    } else if (state === por.textContent) {
+      result.textContent = `${input.value} ${state} ${input2.value} = ${
+        +input.value * +input2.value
+      }`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    } else if (state === dividido.textContent) {
+      result.textContent = `${input.value} ${state} ${input2.value} = ${
+        +input.value / +input2.value
+      }`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    } else if (state === cuadrado.textContent) {
+      result.textContent = `${input.value} ${state}  = ${Math.pow(
+        +input.value,
+        2
+      )}`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    } else if (state === precent.textContent) {
+      result.textContent = `${input.value} From ${input2.value} = ${Math.floor(
+        (input.value / input2.value) * 100
+      )}%`;
+      input.style.display = "block";
+      input2.style.display = "none";
+      stash = [];
+      stash2 = [];
+      input.value = "";
+    }
     stash2 = [];
-    input.value = "";
-  } else if (state === menos.textContent) {
-    result.textContent = `${input.value} ${state} ${input2.value} = ${
-      +input.value - +input2.value
-    }`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
-    stash2 = [];
-    input.value = "";
-  } else if (state === por.textContent) {
-    result.textContent = `${input.value} ${state} ${input2.value} = ${
-      +input.value * +input2.value
-    }`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
-    stash2 = [];
-    input.value = "";
-  } else if (state === dividido.textContent) {
-    result.textContent = `${input.value} ${state} ${input2.value} = ${
-      +input.value / +input2.value
-    }`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
-    stash2 = [];
-    input.value = "";
-  } else if (state === cuadrado.textContent) {
-    result.textContent = `${input.value} ${state}  = ${Math.pow(
-      +input.value,
-      2
-    )}`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
-    stash2 = [];
-    input.value = "";
-  } else if (state === precent.textContent) {
-    result.textContent = `${input.value} From ${input2.value} = ${Math.floor(
-      (input.value / input2.value) * 100
-    )}%`;
-    input.style.display = "block";
-    input2.style.display = "none";
-    stash = [];
-    stash2 = [];
-    input.value = "";
   }
 };
