@@ -89,6 +89,9 @@ math.forEach(
         input.style.display = "none";
         input2.style.display = "block";
       }
+      if (state === cuadrado.textContent) {
+        input2.style.display = "none";
+      }
     })
 );
 
@@ -132,7 +135,7 @@ igual.onclick = function () {
     stash2 = [];
     input.value = "";
   } else if (state === cuadrado.textContent) {
-    result.textContent = `${input.value} ${state} ${input2.value} = ${Math.pow(
+    result.textContent = `${input.value} ${state}  = ${Math.pow(
       +input.value,
       2
     )}`;
